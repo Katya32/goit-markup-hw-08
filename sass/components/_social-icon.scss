@@ -1,0 +1,39 @@
+.social-link {
+    padding-right: 32px;
+    padding-left: 32px;
+    display: flex;
+    justify-content: center;
+  } 
+
+.ton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $icon-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.ton:hover,
+.ton:focus {
+    background-color: $accent-color;
+    color: $white;
+  }
+
+.icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    fill: currentColor;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+.application-link:not(:last-child) {
+    margin-right: 10px;
+      }

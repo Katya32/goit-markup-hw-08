@@ -1,0 +1,102 @@
+/* наши преимущества */
+.section-one {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  @media screen and (min-width: 768px) {
+    padding: 60px 0px 45px 0px;
+  }
+}
+
+.adv-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: $primary-text-color;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin: 0px;
+}
+
+.feature-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $title-text-color;
+    font-weight: 400;
+    margin: 0px;
+  }
+
+  .title {
+    color: $primary-text-color;
+    text-transform: uppercase;
+  }
+}
+
+.item-title {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  &:not(:last-child){
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 3 * 30px) / 4);
+    }
+  
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 60px;
+  }
+
+  // &:nth-last-child(-n + 2) {
+  //   @media screen and (min-width: 768px) {
+  //     margin-bottom: 0px;
+  //   }
+  // }
+}
+
+.picture {
+  height: 120px;
+  background-color: $background-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.symbol {
+  width: 70px;
+  height: 70px;
+}

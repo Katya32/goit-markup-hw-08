@@ -1,0 +1,47 @@
+.contact-link {
+  color: $title-text-color;
+  font-size: 14px;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.contact {
+  cursor: pointer;
+  
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    margin-left: 50px;
+  }
+}
+
+.pin {
+  margin-right: 10px;
+  color: $title-text-color;
+}
+
+.item {
+  fill: currentColor;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+  }
+}
