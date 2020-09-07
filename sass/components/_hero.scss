@@ -11,23 +11,23 @@
     ),
     url("../../img/hero-mobile.jpg");
 
-  @media screen and (min-resolution: 2dppx) {
-    background-image: url("../../img/hero-mobile2x.jpg");
-  }
+  // @media screen and (min-resolution: 2dppx) {
+  //   background-image: url("../../img/hero-mobile2x.jpg");
+  // }
 
-  @media screen and (min-width: 768px) {
-    background-image: url("../../img/hero-tablet.jpg");
-    @media screen and (min-resolution: 2dppx) {
-      background-image: url("../../img/hero-tablet2x.jpg");
-    }
-  }
+  // @media screen and (min-width: 768px) {
+  //   background-image: url("../../img/hero-tablet.jpg");
+  //   @media screen and (min-resolution: 2dppx) {
+  //     background-image: url("../../img/hero-tablet2x.jpg");
+  //   }
+  // }
 
-  @media screen and (min-width: 1200px) {
-    background-image: url("../../img/hero-desctop.jpg");
-    @media screen and (min-resolution: 2dppx) {
-      background-image: url("../../img/hero-desctop2x.jpg");
-    }
-  }
+  // @media screen and (min-width: 1200px) {
+  //   background-image: url("../../img/hero-desctop.jpg");
+  //   @media screen and (min-resolution: 2dppx) {
+  //     background-image: url("../../img/hero-desctop2x.jpg");
+  //   }
+  // }
 
   background-repeat: no-repeat;
   background-size: cover;
