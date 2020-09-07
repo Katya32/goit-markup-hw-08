@@ -4,7 +4,13 @@
     display: none;
   }
 }
+.section-skills {
+  padding-bottom: 60px;
 
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
 .section-title {
   color: $primary-text-color;
   font-weight: 700;

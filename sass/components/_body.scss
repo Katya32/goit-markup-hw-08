@@ -6,4 +6,7 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
   }
-
+  
+  body.modal-open {
+    overflow: hidden;
+  }

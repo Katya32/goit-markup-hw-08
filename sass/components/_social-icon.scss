@@ -3,6 +3,7 @@
     padding-left: 32px;
     display: flex;
     justify-content: center;
+    
   } 
 
 .ton {
@@ -34,6 +35,9 @@
         margin-right: 0px;
       }
     }
-.application-link:not(:last-child) {
-    margin-right: 10px;
-      }
+.application-link {
+  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-right: 10px; 
+  }
+}

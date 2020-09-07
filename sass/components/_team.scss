@@ -1,14 +1,14 @@
-/* наша команда */
+// /* наша команда */
 .team {
   background-color: $background-grey;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
 
-  // @media screen and (max-width: 1199px) {
-  // padding-top: 30px;
-  // padding-bottom: 30px;
-  // }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   .title {
     color: $primary-text-color;
@@ -32,26 +32,32 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
+      margin: -15px;
     }
 
     @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
+      margin: -15px;
     }
   }
 }
 
 .name-title {
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   margin: 0px 0px 10px;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 14px;
+  }
 }
 
 .photo {
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .icon-team {
@@ -59,19 +65,46 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: $white;
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 24px;
 
+  &:nth-child(-n + 2) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+     }
+   }
+
+   &:nth-child(3) {
+    @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+   }
+  }
+  
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    margin-bottom: 0px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 3 * 30px) / 4);
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+    padding-bottom: 0px;
   }
+}
 
+
+.icon-team {
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+    width: calc((100% - 8 * 15px) / 4);
   }
 }

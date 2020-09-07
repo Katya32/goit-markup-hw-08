@@ -6,6 +6,18 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+
+  .left-footer {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 60px;
+      }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+      margin-right: 70px;
+      text-align: start;
+      }
+  }
   
   .page-footer {
     background-color: #2f303a;
@@ -34,6 +46,14 @@
   .join {
     display: inline-block;
     margin-bottom: 60px;
+      
+    @media screen and (min-width: 768px) {
+      margin-bottom: 102px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+      text-align: start;
+      }
   }
   
   .icon-net {
@@ -97,9 +117,17 @@
     outline: none;
     position: relative;
 
+    @media screen and (min-width: 768px) {
+      width: 200px;
+      align-items: center;
+      bottom: 0;
+      right: 0;
+      }
+
     @media screen and (min-width: 1200px) {
       position: absolute;
       justify-content: left;
+      margin-bottom: 0;
       }
   }
   
@@ -116,14 +144,20 @@
   
   .footer-form {
     flex-direction: column;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
     @media screen and (min-width: 1200px) {
-      display: flex;
+      
       position: relative;
       width: 570px;
-      }
+      align-items: flex-start;
+    }
   }
-  
+ 
+
   .footer-email {
     padding: 15px 16px;
     outline: none;
@@ -135,7 +169,17 @@
     background-color: #2f303a;
     color: $white;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
+
+    @media screen and (min-width: 768px) {
+      width: 450px;
+      margin-bottom: 20px;
+      }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+      margin-bottom: 0px;
+    }
+      
   }
   
   .footer-label {
@@ -146,9 +190,24 @@
     text-transform: uppercase;
     color: $white;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 0px;
+   
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       margin-top: 0px;
-      }
+    }
+  }
+
+  .footer-tablet {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
   }

@@ -10,7 +10,27 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/background-\ team.jpg");
+      url("../../img/hero-mobile.jpg");
+      
+      @media screen and (min-resolution: 2dppx) {
+        background-image: url('../../img/hero-mobile2x.jpg');
+      }
+
+      @media screen and (min-width: 768px) {
+        background-image: url('../../img/hero-tablet.jpg');
+        @media screen and (min-resolution: 2dppx) {
+          background-image: url('../../img/hero-tablet2x.jpg');
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        background-image: url('../../img/hero-desctop.jpg');
+        @media screen and (min-resolution: 2dppx) {
+          background-image: url('../../img/hero-desctop2x.jpg');
+        }
+      }
+
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -37,7 +57,7 @@
     margin-right: auto;
     margin-bottom: 30px;
     margin-left: auto;
-    width: 100%;
+    width: 360px;
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;

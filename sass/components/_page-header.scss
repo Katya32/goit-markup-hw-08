@@ -1,14 +1,20 @@
 .page-header {
   min-height: 60px;
   margin-bottom: 0px;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    min-height: 80px;
+  }
 }
 
 .main-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
-  position: relative;
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-around;
+  }
 }
 
 .menu-button {
@@ -17,6 +23,16 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  outline: none;
+    
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -32,20 +48,30 @@
 }
 
 .menu-container {
-  display: none;
-  border-top: 1px solid #ECECEC;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
   background-color: $white;
-  padding: 20px;
   text-align: center;
   font-size: 20px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
+  z-index: 10;
+  
   &.is-open {
     display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-grow: 1;
+    font-size: 0px;
   }
 }

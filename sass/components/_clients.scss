@@ -1,42 +1,48 @@
 /* постоянные клиенты */
-.section-skills {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.section-clients {
+.list-clients {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0px;
+  margin: -15px;
   padding: 0px;
-
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
 
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
+    margin: -15px;
+    }
+}
+  
+  .section-client {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+
+      .client {
+       width: calc((100% - 4 * 15px) / 2);
+       margin: 15px;
+
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 6 * 15px) / 3);
+        margin: 15px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 12 * 15px) / 6);
+        margin: 15px;
+      }
     }
   }
-  
-  .section-skills .client {
 
-    @media screen and (max-width: 767px) {
-        width: calc((100% - 2 * 30px) / 2)
-    }
-
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
-
-    &:nth-child(-n + 4) {
-      margin-bottom: 30px;
-    }
-  }
-  
   .link-client {
     display: flex;
     justify-content: center;
@@ -53,4 +59,3 @@
       border-color: $accent-color;
     }
   }
-  
