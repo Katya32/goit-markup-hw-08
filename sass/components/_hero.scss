@@ -1,67 +1,64 @@
-
 /* главный контент страницы */
 .hero {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: $title-text-color;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../../img/hero-mobile.jpg");
-      
-      @media screen and (min-resolution: 2dppx) {
-        background-image: url('../../img/hero-mobile2x.jpg');
-      }
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $title-text-color;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../img/hero-mobile.jpg");
 
-      @media screen and (min-width: 768px) {
-        background-image: url('../../img/hero-tablet.jpg');
-        @media screen and (min-resolution: 2dppx) {
-          background-image: url('../../img/hero-tablet2x.jpg');
-        }
-      }
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url("../../img/hero-mobile2x.jpg");
+  }
 
-      @media screen and (min-width: 1200px) {
-        background-image: url('../../img/hero-desctop.jpg');
-        @media screen and (min-resolution: 2dppx) {
-          background-image: url('../../img/hero-desctop2x.jpg');
-        }
-      }
+  @media screen and (min-width: 768px) {
+    background-image: url("../../img/hero-tablet.jpg");
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../../img/hero-tablet2x.jpg");
+    }
+  }
 
+  @media screen and (min-width: 1200px) {
+    background-image: url("../../img/hero-desctop.jpg");
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url("../../img/hero-desctop2x.jpg");
+    }
+  }
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 0px;
-    
-  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 0px;
+
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
-    }
   }
-  
-  .main-title {
-    color: $white;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 30px;
-    margin-left: auto;
-    width: 360px;
+}
 
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.36;
-      width: 696px;
-      }
+.main-title {
+  color: $white;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  width: 360px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
   }
+}
