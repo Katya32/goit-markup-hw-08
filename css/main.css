@@ -232,19 +232,6 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .hero {
-    max-width: 480px;
-    padding-top: 118px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .hero {
-    max-width: 768px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
