@@ -14,8 +14,10 @@
 }
 
 .work-element {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   
   display: list-item;
@@ -73,6 +75,29 @@
   position: relative;
   overflow: hidden;
 }
+
+.thumb {
+  width: 450px;
+  height: 294px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+
+  & > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  
+    object-fit: cover;
+  }
+}
+
+
 .overlay {
   position: absolute;
   bottom: 0;

@@ -24,7 +24,7 @@
     text-align: center;
     color: $title-text-color;
     font-weight: 400;
-    margin-bottom: 16px;
+    margin-bottom: 28px;
     margin-top: 0px;
   }
 
@@ -69,13 +69,13 @@
   &:nth-child(-n + 2) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
-     }
-   }
+    }
+  }
 
    &:nth-child(3) {
     @media screen and (max-width: 767px) {
     margin-bottom: 60px;
-   }
+    }
   }
   
   @media screen and (min-width: 768px) {
@@ -93,11 +93,6 @@
 
 
 .icon-team {
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-    }
-  }
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
@@ -106,5 +101,27 @@
   @media screen and (min-width: 1200px) {
     margin: 15px;
     width: calc((100% - 8 * 15px) / 4);
+  }
+}
+
+.thumb-team {
+  width: 450px;
+  height: 460px;
+  
+  & > img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 260px;
   }
 }

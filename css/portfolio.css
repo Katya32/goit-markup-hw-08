@@ -1,4 +1,10 @@
 @charset "UTF-8";
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* кнопки навигации */
 .selective-list {
   padding-top: 60px;
@@ -116,8 +122,10 @@
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-element:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .work-element:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -175,6 +183,31 @@
 .box {
   position: relative;
   overflow: hidden;
+}
+
+.thumb {
+  width: 450px;
+  height: 294px;
+}
+
+@media screen and (min-width: 768px) {
+  .thumb {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb {
+    width: 370px;
+  }
+}
+
+.thumb > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .overlay {

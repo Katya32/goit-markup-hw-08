@@ -36,8 +36,14 @@
       }
     }
 .application-link {
-  margin-bottom: 30px;
+  margin-bottom: 38px;
   &:not(:last-child) {
     margin-right: 10px; 
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 42px;
   }
 }
